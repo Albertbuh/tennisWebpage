@@ -1,0 +1,27 @@
+:root {
+  --overlay-color: rgb(0,0,0,.2); 
+  --side-paddings: 5%;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: white;
+}
+
+img.background {
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  left: 0;
+  top: 0;
+  object-fit: fill;
+}
+
+
+

@@ -1,0 +1,36 @@
+.header-section {
+  background-color: var(--overlay-color);
+  margin: -10px -10px 0px;
+  padding: 10px var(--side-paddings);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.61);
+}
+
+.left-section > img{
+  width: 100px;
+  cursor: pointer;
+}
+
+.middle-section > a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.right-section > img {
+  width: 32px;
+  object-fit: fill;
+  margin: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .right-section,
+  .middle-section {
+    display: none;
+  }
+}
+
