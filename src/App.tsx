@@ -2,26 +2,50 @@
 import './styles/styles.css';
 import Header from './header/Header';
 import FirstSection from './sectionOne/First';
+import Card from './card/Card';
+//@ts-ignore TS wouldn't like to read .png format T_T
+import background from './assets/background.png';
 //@ts-ignore
- import background from './assets/background.png';
+import card from './assets/cardThumb1.png';
+//@ts-ignore
+import card2 from './assets/cardThumb2.png';
+//@ts-ignore
+import card3 from './assets/cardThumb3.png';
 
- import {useRef, useEffect, useState,
-         } from 'react';
+
+import {useRef, useEffect, useState,} from 'react';
 
 function App() {
-
   return (
     <>
       <div className="first-wrap">
-        <Background/>
+        <Background image={background}/>
         <Header />
         <FirstSection />
       </div>
+      <div style={{
+        margin: "80px var(--side-paddings)",
+        display: "flex",
+        justifyContent: "space-between",
+      }} >
+        <Card url={card}> 
+        5 летних <br></br>
+        грунтовых кортов
+        </Card>
+        <Card url={card2}> 
+        Зал с покрытием &quot;искусственная трава&quot;
+        </Card>
+        <Card url={card3}> 
+        Зал с покрытием &quot;Хард&quot;
+        </Card>
+      </div>
+      
+
     </>
   );
 }
 
-function Background() {
+function Background(props: {image:string}) {
   const imageRef = useRef(null);
   const [imageHeight, setHeight] = useState(0);
   useEffect(() => {
@@ -33,7 +57,7 @@ function Background() {
 
   return(
     <>
-      <img src={background} ref={imageRef} className="background"/>
+      <img src={props.image} ref={imageRef} className="background"/>
       <div className="background overlay" style={{
         height: imageHeight,
         backgroundColor: "var(--overlay-color)",
