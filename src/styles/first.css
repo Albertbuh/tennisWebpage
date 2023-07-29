@@ -66,15 +66,15 @@
   padding: 0px 80px 10px 16px;
   margin: 5px 5px 0px;
   position:relative;
-  transition: background-color .3s, padding .3s border .3s;
+  transition: background-color .15s;
 }
 .section-footer .item:hover {
-  padding: 0px 98px 6px 14px;
+  padding: 0px 78px 6px 14px;
   background-color: var(--dark-purple);
   border: 2px solid white;
 }
 .section-footer .item:active {
-  padding: 0px 100px 10px 16px;
+  padding: 0px 80px 10px 16px;
   background-color: var(--purple);
   border: none;
 }
