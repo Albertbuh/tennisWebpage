@@ -1,0 +1,91 @@
+.first-container {
+  color:white;
+  padding: 60px var(--side-paddings) 0px;
+  height: 500px;
+}
+
+.first-container > h1.tennis-header {
+  font-size: 28px;
+  line-height: 44px;
+  width: 13em;
+}
+
+.first-container .button-container {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-container .video-button {
+  background-color: var(--purple);
+  color: white;
+  outline: 1px solid white;
+  outline-offset: 4px;
+  border:none;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  transition: outline-offset .3s, background-color .3s;
+}
+
+.first-container .video-button:hover {
+  outline-offset: 0px;
+  background-color: var(--dark-purple);
+}
+.first-container .video-button:active {
+  outline-offset: 8px;
+  background-color: var(--purple);
+}
+
+.first-container .button-label {
+  width: 10em;
+  padding-left: 5px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.section-footer {
+  position: absolute;
+  bottom: 0;
+  right: var(--side-paddings);
+  left: var(--side-paddings);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+
+.section-footer .item {
+  background-color: var(--purple);
+  padding: 0px 100px 10px 16px;
+  margin: 5px 5px 0px;
+  position:relative;
+  transition: background-color .3s, padding .3s border .3s;
+}
+.section-footer .item:hover {
+  padding: 0px 98px 6px 14px;
+  background-color: var(--dark-purple);
+  border: 2px solid white;
+}
+.section-footer .item:active {
+  padding: 0px 100px 10px 16px;
+  background-color: var(--purple);
+  border: none;
+}
+
+.section-footer .item .subject {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.section-footer .item .link-icon {
+  width: 24px;
+  object-fit: fill;
+  position: absolute;
+  right: 10%;
+  top: 44%;
+}

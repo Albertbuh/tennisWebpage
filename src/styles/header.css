@@ -1,6 +1,4 @@
 .header-section {
-  background-color: var(--overlay-color);
-  margin: -10px -10px 0px;
   padding: 10px var(--side-paddings);
   display: flex;
   justify-content: space-between;
