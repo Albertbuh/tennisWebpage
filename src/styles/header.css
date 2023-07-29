@@ -30,5 +30,10 @@
   .middle-section {
     display: none;
   }
+
+  .header-section {
+    justify-content: center;
+  }
+
 }
 

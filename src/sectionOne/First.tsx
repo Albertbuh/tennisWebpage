@@ -13,10 +13,12 @@ function FirstSection() {
     <>
       <section className="first-container" style={style}>
         <h1 className="tennis-header">
-          {" "}
-          Петербургский теннисный клуб{" "}
+          Петербургский 
           <span>
-            <br></br> имени М.А. Пасечникова{" "}
+            <br></br> теннисный клуб
+          </span>
+          <span>
+            <br></br> имени М.А. Пасечникова
           </span>{" "}
         </h1>
         <VideoButton

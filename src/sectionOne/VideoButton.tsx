@@ -6,7 +6,7 @@ function VideoButton(props: buttonProps) {
   return (
     <>
       <div className="button-container">
-        <button className={props.className}>&#9658;</button>
+        <button className={props.className}>&#9654;</button>
         <span className="button-label"> {props.label}</span>
       </div>
     </>

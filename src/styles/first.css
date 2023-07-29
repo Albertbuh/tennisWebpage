@@ -1,6 +1,6 @@
 .first-container {
   color:white;
-  padding: 60px var(--side-paddings) 0px;
+  padding: 80px var(--side-paddings) 0px;
   height: 500px;
 }
 
@@ -28,6 +28,8 @@
   width: 44px;
   height: 44px;
   cursor: pointer;
+  text-align: center;
+  padding-bottom: .2em;
   transition: outline-offset .3s, background-color .3s;
 }
 
@@ -61,7 +63,7 @@
 
 .section-footer .item {
   background-color: var(--purple);
-  padding: 0px 100px 10px 16px;
+  padding: 0px 80px 10px 16px;
   margin: 5px 5px 0px;
   position:relative;
   transition: background-color .3s, padding .3s border .3s;
