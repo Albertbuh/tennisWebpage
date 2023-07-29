@@ -13,7 +13,15 @@ body {
   padding: 0px;
   height: 3000px;
   min-width: 1000px;
+
+  /* remove user selection from page */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
+
+
 
 h1 {
   color: white;
