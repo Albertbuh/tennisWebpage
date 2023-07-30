@@ -56,7 +56,7 @@ function App() {
           </li>
         </ul>
       </TextMessage>
-      <Slider header="Тренерский состав"/>
+      <Slider header="Тренерский состав" maxElements={6} />
 
     </>
   );

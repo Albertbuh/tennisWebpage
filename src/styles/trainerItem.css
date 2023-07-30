@@ -1,7 +1,7 @@
 .trainer-item {
   display: grid;
   grid-template-rows: 200px 50px 50px;
-  width: 140px;
+  width: 155px;
   justify-items: center;
   align-items: center;
   color: var(--black);
