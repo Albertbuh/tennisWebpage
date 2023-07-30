@@ -6,7 +6,8 @@ import youtubeIcon from "../assets/youtubeLogo.png";
 //@ts-ignore
 import vkIcon from "../assets/vkLogo.png";
 
-import LinkButton from "src/linkButton/LinkButton";
+import Navbar from "src/Navbar";
+
 export default function Header() {
   return (
     <>
@@ -14,13 +15,7 @@ export default function Header() {
         <div className="left-section">
           <img src={mainIcon} alt="" />
         </div>
-        <div className="middle-section">
-          {
-            links.map((link, index) => (
-              <LinkButton href={link.href} key={index}> {link.text} </LinkButton>
-            ))
-          }
-        </div>
+        <Navbar/>
         <div className="right-section">
           <img src={youtubeIcon} alt="" />
           <img src={vkIcon} alt="" />
@@ -30,39 +25,5 @@ export default function Header() {
   );
 }
 
-const links = [
-  {
-    href: "#",
-    text: "Главная"
-  },
-  {
-    href: "#",
-    text: "О клубе"
-  },
-  {
-    href: "#",
-    text: "Тренеры"
-  },
-  {
-    href: "#",
-    text: "Услуги"
-  },
-  {
-    href: "#",
-    text: "Детский теннис"
-  },
-  {
-    href: "#",
-    text: "Галерея"
-  },
-  {
-    href: "#",
-    text: "Цены"
-  },
-  {
-    href: "#",
-    text: "Контакты"
-  },
-]
 
 
