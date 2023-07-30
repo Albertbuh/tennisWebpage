@@ -10,6 +10,7 @@ import LastSection from "../main/lastSection/lastSection";
 
 import { imageImports } from "../importImages";
 import { ITrainer, TrainerSliderContent } from "../Slider/SliderItem";
+import FirstSection from "src/main/sectionOne/First";
 
 
 
@@ -17,7 +18,9 @@ function App() {
   const [list, setList] = useState(trainerList);
   return (
     <>
-      
+    <div className="first-wrap">
+        <FirstSection />
+      </div>
       <CardContainer />
       <TextMessage image={imageImports.get("jumpBoy")}>
         <h1> Спортивный клуб </h1>

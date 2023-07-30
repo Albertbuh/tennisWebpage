@@ -1,18 +1,14 @@
 import { Outlet } from "react-router-dom";
 
 import Header from "./header/Header";
-import { imageImports } from "./importImages";
 import Background from "./Background";
-import FirstSection from "./main/sectionOne/First";
 
-function Layout() {
+function Layout(props: {image:string, height: string | number}) {
   return (
     <>
-      <div className="first-wrap">
-        <Background image={imageImports.get("background")} />
-        <Header />
-        <FirstSection />
-      </div>
+        <Background image={props.image} height={props.height} />
+        <Header/>
+      
       <Outlet />
     </>
   );

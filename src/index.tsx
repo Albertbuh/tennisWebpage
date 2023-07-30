@@ -1,25 +1,26 @@
 import ReactDOM from "react-dom/client";
 import { StrictMode } from "react";
 import App from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import News from "./pages/News";
 import About from "./pages/AboutClub";
 import Layout from "./Layout";
+import { imageImports } from "./importImages";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         {/*Main router, which help to jump from page to page */}
-        <Route path="/" element={<Layout />}> 
+        <Route path="/" element={<Layout image={imageImports.get("background")} height={600}/>}> 
           <Route index element={<App />} />
           <Route path="news" element={<News />} />
           <Route path="about_club" element={<About />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 root.render(
