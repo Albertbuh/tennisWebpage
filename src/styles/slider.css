@@ -8,16 +8,18 @@
   color: var(--black);
   transition: background-color .3s;
   margin-bottom: 40px;
+  font-size: 24px;
 }
 
 .slider-header button {
   background-color: var(--purple);
   color: white;
   border:none;
-  margin: 4px;
-  padding: 4px 8px;
+  margin: 6px;
+  padding: 0.1em 0.4em 0.45em 0.4em;
   font-size: 22px;
   cursor: pointer;
+  text-align:center;
   transition: background-color .15s, box-shadow .15s;
 }
 .slider-header button:hover {
@@ -31,5 +33,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  padding: 2px;
 }
 

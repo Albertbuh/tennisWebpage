@@ -9,10 +9,26 @@ import Slider from "./Slider/Slider";
 import background from "./assets/background.png";
 //@ts-ignore
 import jumpBoyImage from "./assets/jumpBoy.png";
+//@ts-ignore
+import trainer1 from "./assets/trainer1.png";
+//@ts-ignore
+import trainer2 from "./assets/trainer2.png";
+//@ts-ignore
+import trainer3 from "./assets/trainer3.png";
+//@ts-ignore
+import trainer4 from "./assets/trainer4.png";
+//@ts-ignore
+import trainer5 from "./assets/trainer5.png";
+//@ts-ignore
+import trainer6 from "./assets/trainer6.png";
+//@ts-ignore
+import trainer7 from "./assets/trainer7.png";
+import { ITrainer, TrainerSlider } from "./Slider/SliderItem";
 
 import { useRef, useEffect, useState } from "react";
 
 function App() {
+  const [list, setList] = useState(trainerList);
   return (
     <>
       <div className="first-wrap">
@@ -56,11 +72,61 @@ function App() {
           </li>
         </ul>
       </TextMessage>
-      <Slider header="Тренерский состав" maxElements={6} />
-
+      <Slider
+        header="Тренерский состав"
+        collection={list}
+        setCollection={setList}
+      >
+        {TrainerSlider(list)}
+      </Slider>
     </>
   );
 }
+
+const trainerList: Array<ITrainer> = [
+  {
+    id: 0,
+    imageUrl: trainer1,
+    name: "Pulvinar aliquam",
+    desc: "Arcu elit massa amet turpis vel consequat pelllentesque sit.",
+  },
+  {
+    id: 1,
+    imageUrl: trainer2,
+    name: "Pretium odio",
+    desc: "Bibendum aliquam volutpat nisl a duis in nisi. In sed commodo lorem morbi quis.",
+  },
+  {
+    id: 2,
+    imageUrl: trainer3,
+    name: "Aliquet consectetur",
+    desc: "Id sapien sed nibh fermentum massa posuere ipsum. Diam in.",
+  },
+  {
+    id: 3,
+    imageUrl: trainer4,
+    name: "Blandit augue",
+    desc: "Scelerisque accumsan pretium justo, vitae eli. Dolor semper morbi sit auctor vel diam eros.",
+  },
+  {
+    id: 4,
+    imageUrl: trainer5,
+    name: "Lorem lacus",
+    desc: "Adipiscing amet, viverra dignissim egestas. Sed nibh egestas venatis faucibus.",
+  },
+  {
+    id: 5,
+    imageUrl: trainer6,
+    name: "sed erat",
+    desc: "Quis ullamcorper pretium lacus risus tellus dolor etiam.",
+  },
+  {
+    id: 6,
+    imageUrl: trainer7,
+    name: "Griga napiga",
+    desc: "Tule des por tuna ullentopodos marin ke to la.",
+  },
+];
 
 function Background(props: { image: string }) {
   const imageRef = useRef(null);

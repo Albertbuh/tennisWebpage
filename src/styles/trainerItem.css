@@ -5,6 +5,7 @@
   justify-items: center;
   align-items: center;
   color: var(--black);
+  margin: 8px;
   margin-top: 12px;
 }
 
