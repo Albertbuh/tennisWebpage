@@ -38,7 +38,7 @@ const textStyle = {
   textAlign: "center",
   fontSize: "24px",
   zIndex: 100,
-  bottom: "10%",  
+  bottom: "15%",  
   left: "50%",
   transform: "translate(-50%, 0)",
   position: "absolute",
