@@ -1,0 +1,35 @@
+.slider {
+  padding: 0px var(--side-paddings);
+}
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black);
+  transition: background-color .3s;
+  margin-bottom: 40px;
+}
+
+.slider-header button {
+  background-color: var(--purple);
+  color: white;
+  border:none;
+  margin: 4px;
+  padding: 4px 8px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color .15s, box-shadow .15s;
+}
+.slider-header button:hover {
+  background-color: var(--dark-purple);
+}
+.slider-header button:active {
+  box-shadow: 0 0 6px var(--purple); 
+}
+
+.slider .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

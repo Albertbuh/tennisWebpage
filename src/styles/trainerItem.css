@@ -1,0 +1,41 @@
+.trainer-item {
+  display: grid;
+  grid-template-rows: 200px 50px 50px;
+  width: 140px;
+  justify-items: center;
+  align-items: center;
+  color: var(--black);
+  margin-top: 12px;
+}
+
+.trainer-item .img-wrap {
+  outline: 1px solid var(--yellow);
+  width: 155px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.trainer-item img {
+  height: calc(100% + 2px);
+  width: 135px;
+  object-fit: cover;
+  margin-top: -1px;
+  z-index: 100;
+}
+.trainer-item p {
+  padding: 0;
+}
+
+.trainer-item p.name {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.trainer-item p.desc {
+  font-size: 10px;
+  text-align: center;
+  font-style: italic;
+  line-height: 14px;
+}
