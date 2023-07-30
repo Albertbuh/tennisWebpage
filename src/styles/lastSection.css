@@ -1,0 +1,71 @@
+.last-section-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px var(--side-paddings);
+  column-gap: 0px;
+}
+
+.last-section-container .facility {
+  border: 1px solid var(--yellow);
+  width: 100%;
+  position: relative;
+  padding: 25px;
+  height: 220px;
+}
+
+.facility img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.facility p {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.facility .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 25px;
+  bottom: 28px;
+  left: 25px;
+  right: 25px;
+  position: absolute;
+}
+
+.prices {
+  padding-right: 60px;
+}
+.prices-container h1 {
+  font-size: 32px;
+  color: var(--black);
+  padding-top: 10px;
+  margin-bottom: 74px;
+}
+
+
+.price {
+  background-color: var(--purple);
+  padding: 16px 24px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  margin: 20px 20px 20px 0px;
+  cursor: pointer;
+  transition: box-shadow .15s;
+}
+.price:hover {
+  box-shadow: 0px 0px 4px var(--dark-purple);
+}
+.price .arrow {
+  position: absolute;
+  font-size: 48px;
+  top: -8px;
+  right: 3%;
+}

@@ -21,13 +21,14 @@ function Header(props: headerProps) {
   );
 }
 
-type SliderAvailableTypes = ITrainer;
+type SliderAvailableTypes = ITrainer | any;
 
 interface SliderProps {
   header: string;
   collection: Array<SliderAvailableTypes>;
   setCollection: Dispatch<SetStateAction<Array<SliderAvailableTypes>>>;
-  children: ReactNode;
+  children?: ReactNode;
+  style?: React.CSSProperties;
 }
 
 function Slider(props: SliderProps) {
@@ -42,7 +43,7 @@ function Slider(props: SliderProps) {
 
   return (
     <>
-      <section className="slider">
+      <section className="slider" style={props.style}>
         <Header text={props.header} onNext={handlerNext} onPrev={handlerPrev} />
         <div className="content">{props.children}</div>
       </section>

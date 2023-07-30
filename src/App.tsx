@@ -24,9 +24,10 @@ import trainer5 from "./assets/trainer5.png";
 import trainer6 from "./assets/trainer6.png";
 //@ts-ignore
 import trainer7 from "./assets/trainer7.png";
-import { ITrainer, TrainerSlider } from "./Slider/SliderItem";
+import { ITrainer, TrainerSliderContent } from "./Slider/SliderItem";
 
 import { useState } from "react";
+import LastSection from "./lastSection/lastSection";
 
 function App() {
   const [list, setList] = useState(trainerList);
@@ -78,8 +79,9 @@ function App() {
         collection={list}
         setCollection={setList}
       >
-        {TrainerSlider(list)}
+        {TrainerSliderContent(list)}
       </Slider>
+      <LastSection/>
     </>
   );
 }

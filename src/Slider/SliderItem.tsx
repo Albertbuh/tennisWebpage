@@ -30,7 +30,7 @@ export function TrainerItem(props: TrainerProps) {
   );
 }
 
-export function TrainerSlider(list: Array<ITrainer>) {
+export function TrainerSliderContent(list: Array<ITrainer>) {
   return (
     <>
       {
