@@ -15,14 +15,11 @@ export default function Header() {
           <img src={mainIcon} alt="" />
         </div>
         <div className="middle-section">
-          <LinkButton href="#"> Главная </LinkButton>
-          <LinkButton href="#"> О клубе </LinkButton>
-          <LinkButton href="#"> Тренеры </LinkButton>
-          <LinkButton href="#"> Услуги </LinkButton>
-          <LinkButton href="#"> Детский теннис </LinkButton>
-          <LinkButton href="#"> Галерея </LinkButton>
-          <LinkButton href="#"> Цены </LinkButton>
-          <LinkButton href="#"> Контакты </LinkButton>
+          {
+            links.map((link, index) => (
+              <LinkButton href={link.href} key={index}> {link.text} </LinkButton>
+            ))
+          }
         </div>
         <div className="right-section">
           <img src={youtubeIcon} alt="" />
@@ -32,5 +29,40 @@ export default function Header() {
     </>
   );
 }
+
+const links = [
+  {
+    href: "#",
+    text: "Главная"
+  },
+  {
+    href: "#",
+    text: "О клубе"
+  },
+  {
+    href: "#",
+    text: "Тренеры"
+  },
+  {
+    href: "#",
+    text: "Услуги"
+  },
+  {
+    href: "#",
+    text: "Детский теннис"
+  },
+  {
+    href: "#",
+    text: "Галерея"
+  },
+  {
+    href: "#",
+    text: "Цены"
+  },
+  {
+    href: "#",
+    text: "Контакты"
+  },
+]
 
 

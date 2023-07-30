@@ -1,5 +1,5 @@
 
-import '../styles/textSection.css';
+import '../../styles/textSection.css';
 //@ts-ignore
 import { ReactNode } from 'react';
 

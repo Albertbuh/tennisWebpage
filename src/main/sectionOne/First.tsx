@@ -1,7 +1,5 @@
-//@ts-ignore
-import "../styles/first.css";
-//@ts-ignore
-import linkIcon from "../assets/linkIcon.png";
+import "../../styles/first.css";
+import { imageImports } from "src/importImages";
 
 import LinkItem from "./LinkItem";
 import VideoButton from "./VideoButton";
@@ -26,10 +24,10 @@ function FirstSection() {
           label="Посмотрите видео о нашем клубе"
         />
         <div className="section-footer">
-          <LinkItem subheader="Услуги" subject="Аренда корта" icon={linkIcon} />
-          <LinkItem subheader="Услуги" subject="Детский теннис" icon={linkIcon}/>
-          <LinkItem subheader="Услуги" subject="Сборы команд" icon={linkIcon} />
-          <LinkItem subheader="Турниры" subject="Расписание" icon={linkIcon} />
+          <LinkItem subheader="Услуги" subject="Аренда корта" icon={imageImports.get("link")} />
+          <LinkItem subheader="Услуги" subject="Детский теннис" icon={imageImports.get("link")}/>
+          <LinkItem subheader="Услуги" subject="Сборы команд" icon={imageImports.get("link")} />
+          <LinkItem subheader="Турниры" subject="Расписание" icon={imageImports.get("link")} />
         </div>
       </section>
     </>

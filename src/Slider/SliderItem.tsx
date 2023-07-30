@@ -5,13 +5,19 @@ export default function SliderItem(props: { children: ReactNode }) {
   return <>{props.children}</>;
 }
 
-
-export interface ITrainer extends TrainerProps {
+export interface ISliderItem {
   id: number;
+  imageUrl: string;
+  desc: string;
+}
+
+export interface ITrainer extends ISliderItem {
+  name: string;
   // imageUrl: string;
-  // name: string;
+  // id: number
   // desc: string;
 }
+
 
 interface TrainerProps {
   imageUrl: string;

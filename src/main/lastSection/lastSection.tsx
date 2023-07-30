@@ -1,16 +1,13 @@
 import Slider from "src/Slider/Slider";
-//@ts-ignore
-import cafe from "../assets/cafe.png";
-//@ts-ignore
-import pool from "../assets/pool.png";
-//@ts-ignore
-import gym from "../assets/gym.png";
+
 
 import { useState } from "react";
-import "../styles/lastSection.css";
+import "../../styles/lastSection.css";
+import { ISliderItem } from "src/Slider/SliderItem";
+import { imageImports } from "src/importImages";
 
 export default function LastSection() {
-  const [facilities, setFacility] = useState(images);
+  const [facilities, setFacility] = useState(imagesList);
   return (
     <>
       <div className="last-section-container">
@@ -21,12 +18,30 @@ export default function LastSection() {
           collection={facilities}
           setCollection={setFacility}
         >
-          <Facility image={facilities[0].image} text={facilities[0].text} />
+          <Facility image={facilities[0].imageUrl} text={facilities[0].desc} />
         </Slider>
       </div>
     </>
   );
 }
+
+const imagesList : ISliderItem[] = [
+  {
+    id: 0,
+    imageUrl: imageImports.get("cafe") as string,
+    desc: "Уютное кафе",
+  },
+  {
+    id: 1,
+    imageUrl: imageImports.get("pool") as string,
+    desc: "Бассейн",
+  },
+  {
+    id: 2,
+    imageUrl: imageImports.get("gym") as string,
+    desc: "Тренажерный зал",
+  },
+];
 
 function Prices() {
   return (
@@ -48,23 +63,7 @@ function Price(props: {text:string}) {
   )
 }
 
-const images = [
-  {
-    id: 0,
-    image: cafe,
-    text: "Уютное кафе",
-  },
-  {
-    id: 1,
-    image: pool,
-    text: "Бассейн",
-  },
-  {
-    id: 2,
-    image: gym,
-    text: "Тренажерный зал",
-  },
-];
+
 function Facility(props: { image: string; text: string }) {
   return (
     <div className="facility">
