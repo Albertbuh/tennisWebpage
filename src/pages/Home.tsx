@@ -1,18 +1,15 @@
 import { useState } from "react";
-import "./styles/styles.css";
+import "../styles/styles.css";
 
 
-import Header from "./header/Header";
-import FirstSection from "./main/sectionOne/First";
-import CardContainer from "./card/CardContainer";
-import TextMessage from "./main/sectionText/TextSection";
-import Slider from "./Slider/Slider";
-import Background from './Background';
-import Footer from "./footer/Footer";
-import LastSection from "./main/lastSection/lastSection";
+import CardContainer from "../card/CardContainer";
+import TextMessage from "../main/sectionText/TextSection";
+import Slider from "../Slider/Slider";
+import Footer from "../footer/Footer";
+import LastSection from "../main/lastSection/lastSection";
 
-import { imageImports } from "./importImages";
-import { ITrainer, TrainerSliderContent } from "./Slider/SliderItem";
+import { imageImports } from "../importImages";
+import { ITrainer, TrainerSliderContent } from "../Slider/SliderItem";
 
 
 

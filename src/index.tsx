@@ -1,9 +1,9 @@
 import ReactDOM from "react-dom/client";
 import { StrictMode } from "react";
-import App from "./Home";
+import App from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import News from "./News";
-import About from "./AboutClub";
+import News from "./pages/News";
+import About from "./pages/AboutClub";
 import Layout from "./Layout";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
