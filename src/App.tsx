@@ -5,6 +5,7 @@ import FirstSection from "./sectionOne/First";
 import CardContainer from "./card/CardContainer";
 import TextMessage from "./sectionText/TextSection";
 import Slider from "./Slider/Slider";
+import Background from './Background';
 //@ts-ignore TS wouldn't like to read .png format T_T
 import background from "./assets/background.png";
 //@ts-ignore
@@ -25,7 +26,7 @@ import trainer6 from "./assets/trainer6.png";
 import trainer7 from "./assets/trainer7.png";
 import { ITrainer, TrainerSlider } from "./Slider/SliderItem";
 
-import { useRef, useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [list, setList] = useState(trainerList);
@@ -128,30 +129,6 @@ const trainerList: Array<ITrainer> = [
   },
 ];
 
-function Background(props: { image: string }) {
-  const imageRef = useRef(null);
-  const [imageHeight, setHeight] = useState(0);
-  useEffect(() => {
-    //@ts-ignore
-    setHeight(imageRef?.current?.clientHeight);
-    console.log(
-      //@ts-ignore
-      `First background image height: ${imageRef?.current?.clientHeight}`
-    );
-  });
 
-  return (
-    <>
-      <img src={props.image} ref={imageRef} className="background" />
-      <div
-        className="background overlay"
-        style={{
-          height: imageHeight,
-          backgroundColor: "var(--overlay-color)",
-        }}
-      ></div>
-    </>
-  );
-}
 
 export default App;
