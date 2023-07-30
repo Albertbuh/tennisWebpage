@@ -11,13 +11,6 @@
   cursor: pointer;
 }
 
-.middle-section > a {
-    margin: 10px;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-
 .right-section > img {
   width: 32px;
   object-fit: fill;

@@ -6,6 +6,7 @@ import CardContainer from "./card/CardContainer";
 import TextMessage from "./sectionText/TextSection";
 import Slider from "./Slider/Slider";
 import Background from './Background';
+import Footer from "./footer/Footer";
 //@ts-ignore TS wouldn't like to read .png format T_T
 import background from "./assets/background.png";
 //@ts-ignore
@@ -82,6 +83,7 @@ function App() {
         {TrainerSliderContent(list)}
       </Slider>
       <LastSection/>
+      <Footer/>
     </>
   );
 }

@@ -1,0 +1,10 @@
+.link-button {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}

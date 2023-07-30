@@ -1,0 +1,26 @@
+.footer-section {
+  padding: 10px var(--side-paddings);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.61);
+  position: absolute;
+  bottom: 0;
+  left:0; right:0;
+  background-color: var(--yellow);
+  font-size: 12px;
+}
+
+.footer-section .left-section {
+  color: rgb(189, 188, 188);
+}
+.footer-section a {
+  color: var(--black);
+}
+
+.footer-section .right-section > img {
+  width: 32px;
+  object-fit: fill;
+  margin: 8px;
+  cursor: pointer;
+}

@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import "../styles/header.css";
 //@ts-ignore
 import mainIcon from "../assets/mainIcon.png";
@@ -7,6 +6,7 @@ import youtubeIcon from "../assets/youtubeLogo.png";
 //@ts-ignore
 import vkIcon from "../assets/vkLogo.png";
 
+import LinkButton from "src/linkButton/LinkButton";
 export default function Header() {
   return (
     <>
@@ -33,10 +33,4 @@ export default function Header() {
   );
 }
 
-interface linkProps {
-  href: string,
-  children: ReactNode
-}
-function LinkButton(props: linkProps) {
-  return <a href={props.href}> {props.children}</a>;
-}
+
