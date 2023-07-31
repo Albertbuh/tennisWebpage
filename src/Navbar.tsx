@@ -25,23 +25,23 @@ const links = [
     text: "Новости"
   },
   {
-    href: "#",
+    href: "/facilities",
     text: "Услуги"
   },
   {
-    href: "#",
+    href: "/kids_tennis",
     text: "Детский теннис"
   },
   {
-    href: "#",
+    href: "/galerey",
     text: "Галерея"
   },
   {
-    href: "#",
+    href: "/prices",
     text: "Цены"
   },
   {
-    href: "#",
+    href: "/contacts",
     text: "Контакты"
   },
 ]

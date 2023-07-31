@@ -1,3 +1,4 @@
+import './styles/styles.css';
 
 function Background(props: { image: string; height?: number | string }) {
   // const imageRef = useRef(null);

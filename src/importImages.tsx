@@ -1,6 +1,10 @@
 //@ts-ignore TS wouldn't like to read .png format T_T
 import background from "./assets/background.png";
 //@ts-ignore
+import background2 from "./assets/background2.png";
+//@ts-ignore
+import background3 from "./assets/nopageBackground.png";
+//@ts-ignore
 import jumpBoyImage from "./assets/jumpBoy.png";
 //@ts-ignore
 import trainer1 from "./assets/trainer1.png";
@@ -24,8 +28,6 @@ import pool from "./assets/pool.png";
 import gym from "./assets/gym.png";
 //@ts-ignore
 import linkIcon from "./assets/linkIcon.png";
-//@ts-ignore
-import background2 from "./assets/background2.png";
 //@ts-ignore 
 import news1 from "./assets/news1.png";
 //@ts-ignore 
@@ -49,6 +51,7 @@ import tournament from "./assets/tournament.png";
 
 export const imageImports = new Map([
   ["background", background],
+  ["nopage", background3],
   ["jumpBoy", jumpBoyImage],
   ["trainer1", trainer1],
   ["trainer2", trainer2],

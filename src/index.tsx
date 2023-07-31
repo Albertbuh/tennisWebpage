@@ -5,6 +5,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import News from "./pages/News";
 import About from "./pages/AboutClub";
 import Layout from "./Layout";
+import NoPage from "./pages/NoPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 
@@ -17,6 +18,7 @@ function AppRouter() {
           <Route index element={<App />} />
           <Route path="news" element={<News />} />
           <Route path="about_club" element={<About />} />
+          <Route path="*" element={<NoPage/>} />
         </Route>
       </Routes>
     </HashRouter>
