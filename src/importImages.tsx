@@ -24,7 +24,20 @@ import pool from "./assets/pool.png";
 import gym from "./assets/gym.png";
 //@ts-ignore
 import linkIcon from "./assets/linkIcon.png";
-
+//@ts-ignore
+import background2 from "./assets/background2.png";
+//@ts-ignore 
+import news1 from "./assets/news1.png";
+//@ts-ignore 
+import news2 from "./assets/news2.png";
+//@ts-ignore 
+import news3 from "./assets/news3.png";
+//@ts-ignore 
+import news4 from "./assets/news4.png";
+//@ts-ignore 
+import news5 from "./assets/news5.png";
+//@ts-ignore 
+import news6 from "./assets/news6.png";
 
 export const imageImports = new Map([
   ["background", background],
@@ -40,4 +53,12 @@ export const imageImports = new Map([
   ["pool",pool],
   ["gym",gym],
   ["link", linkIcon],
+  ["backgroundNews", background2],
+  ["backgroundAbout", background2],
+  ["news_1", news1],
+  ["news_2", news2],
+  ["news_3", news3],
+  ["news_4", news4],
+  ["news_5", news5],
+  ["news_6", news6],
 ]);

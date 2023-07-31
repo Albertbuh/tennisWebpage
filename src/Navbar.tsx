@@ -1,5 +1,5 @@
 import { Link} from "react-router-dom";
-
+import './styles/linkButton.css';
 function Navbar() {
   return (
     <nav className="middle-section">

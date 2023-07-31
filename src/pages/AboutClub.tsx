@@ -1,3 +1,10 @@
+import Background from "src/Background";
+import { imageImports } from "src/importImages";
+
 export default function About() {
-  return <h1>This is our about page</h1>;
+  return (
+    <>
+      <Background image={imageImports.get("background")} height={400}/>
+    </>
+  )
 }

@@ -11,6 +11,7 @@ import LastSection from "../main/lastSection/lastSection";
 import { imageImports } from "../importImages";
 import { ITrainer, TrainerSliderContent } from "../Slider/SliderItem";
 import FirstSection from "src/main/sectionOne/First";
+import Background from "src/Background";
 
 
 
@@ -18,7 +19,8 @@ function App() {
   const [list, setList] = useState(trainerList);
   return (
     <>
-    <div className="first-wrap">
+      <Background image={imageImports.get("background")} height={600} />
+      <div className="first-wrap">
         <FirstSection />
       </div>
       <CardContainer />

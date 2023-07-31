@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr;
   padding: 0px var(--side-paddings);
   column-gap: 0px;
+  padding-bottom: 300px;
 }
 
 .last-section-container .facility {
