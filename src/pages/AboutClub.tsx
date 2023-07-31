@@ -2,8 +2,8 @@ import Background from "src/Background";
 import { imageImports } from "src/importImages";
 
 import "../styles/about_club/aboutClub.css";
-import Slider from "src/Slider/Slider";
-import { ISliderItem } from "src/Slider/SliderItem";
+import Slider from "src/slider/Slider";
+import { ISliderItem } from "src/slider/SliderItem";
 import { useState } from "react";
 import Facility from "src/Facility";
 import TextMessage from "src/main/sectionText/TextSection";

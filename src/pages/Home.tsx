@@ -4,12 +4,12 @@ import "../styles/styles.css";
 
 import CardContainer from "../card/CardContainer";
 import TextMessage from "../main/sectionText/TextSection";
-import Slider from "../Slider/Slider";
+import Slider from "../slider/Slider";
 import Footer from "../footer/Footer";
 import LastSection from "../main/lastSection/lastSection";
 
 import { imageImports } from "../importImages";
-import { ITrainer, TrainerSliderContent } from "../Slider/SliderItem";
+import { ITrainer, TrainerSliderContent } from "../slider/SliderItem";
 import FirstSection from "src/main/sectionOne/First";
 import Background from "src/Background";
 

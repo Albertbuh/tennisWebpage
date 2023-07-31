@@ -1,9 +1,9 @@
-import Slider from "src/Slider/Slider";
+import Slider from "src/slider/Slider";
 
 
 import { useState } from "react";
 import "../../styles/lastSection.css";
-import { ISliderItem } from "src/Slider/SliderItem";
+import { ISliderItem } from "src/slider/SliderItem";
 import { imageImports } from "src/importImages";
 import Facility from "src/Facility";
 
