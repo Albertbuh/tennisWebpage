@@ -48,10 +48,13 @@ import gruntCort from "./assets/gruntCort.png";
 import profCort from "./assets/propCort.png";
 //@ts-ignore
 import tournament from "./assets/tournament.png";
+//@ts-ignore
+import larrow from "./assets/arrow.png";
 
 export const imageImports = new Map([
   ["background", background],
   ["nopage", background3],
+  ["larrow", larrow],
   ["jumpBoy", jumpBoyImage],
   ["trainer1", trainer1],
   ["trainer2", trainer2],

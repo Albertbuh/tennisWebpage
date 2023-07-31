@@ -60,7 +60,7 @@ function Prices() {
 
 function Price(props: {text:string}) {
   return (
-    <div className="price"> <span>{props.text}</span> <span className="arrow">&larr;</span></div>
+    <div className="price"> <span>{props.text}</span> <img src={imageImports.get("larrow")} className="arrow"/></div>
   )
 }
 

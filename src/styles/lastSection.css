@@ -33,9 +33,10 @@
 .price:hover {
   box-shadow: 0px 0px 4px var(--dark-purple);
 }
+
 .price .arrow {
   position: absolute;
-  font-size: 48px;
-  top: -8px;
-  right: 3%;
+  width: 40px;
+  right: 5%;
+  top: 24%;
 }
