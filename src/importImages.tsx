@@ -38,6 +38,14 @@ import news4 from "./assets/news4.png";
 import news5 from "./assets/news5.png";
 //@ts-ignore 
 import news6 from "./assets/news6.png";
+//@ts-ignore
+import sumCort from "./assets/summerCort.png";
+//@ts-ignore
+import gruntCort from "./assets/gruntCort.png";
+//@ts-ignore
+import profCort from "./assets/propCort.png";
+//@ts-ignore
+import tournament from "./assets/tournament.png";
 
 export const imageImports = new Map([
   ["background", background],
@@ -61,4 +69,8 @@ export const imageImports = new Map([
   ["news_4", news4],
   ["news_5", news5],
   ["news_6", news6],
+  ["summer_cort", sumCort],
+  ["grunt_cort", gruntCort],
+  ["blue_cort", profCort],
+  ["tournament", tournament],
 ]);

@@ -5,6 +5,7 @@ import { useState } from "react";
 import "../../styles/lastSection.css";
 import { ISliderItem } from "src/Slider/SliderItem";
 import { imageImports } from "src/importImages";
+import Facility from "src/Facility";
 
 export default function LastSection() {
   const [facilities, setFacility] = useState(imagesList);
@@ -64,12 +65,4 @@ function Price(props: {text:string}) {
 }
 
 
-function Facility(props: { image: string; text: string }) {
-  return (
-    <div className="facility">
-      <img src={props.image} alt="" />
-      <div className="overlay"></div>
-      <p>{props.text}</p>
-    </div>
-  );
-}
+

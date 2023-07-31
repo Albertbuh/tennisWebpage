@@ -10,7 +10,6 @@
   font-size: 40px;
   margin-top: 54px;
   color: white;
-
 }
 
 .news-grid {
@@ -37,6 +36,7 @@
   color: rgb(137, 136, 136);
   font-size: 12px;
 }
+
 
 .news-item .subject {
   color: var(--black);
